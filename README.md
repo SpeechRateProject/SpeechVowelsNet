@@ -98,7 +98,7 @@ Example for the data is provided in the data folder, and looks as follow:
 
 ```
 
-And inside each Vowel Folders(in the format mentioned [here](https://github.com/Jenny-Smolenksy/LibriSpeechFilesParser.git):
+And inside each Vowel Folders(in the format mentioned [here](https://github.com/Jenny-Smolensky/LibriSpeechFilesParser.git):
 ```
 +---AA
 |       10.wav
