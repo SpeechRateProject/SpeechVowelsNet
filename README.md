@@ -42,63 +42,63 @@ In the parameters to the main(see Params) you should specify three folders: Trai
 The files inside were created by the "Libri speech files parser" , you can see here(https://github.com/Jenny-Smolenksy/libri-speech-files-parser)
 
 Exmple for the data is provided in the data folder, and looks as follow:
-'''
- ---data
-    +---test
-    |   +---AA
-    |   +---AE
-    |   +---AH
-    |   +---AO
-    |   +---AW
-    |   +---AY
-    |   +---EH
-    |   +---empty
-    |   +---ER
-    |   +---EY
-    |   +---IH
-    |   +---IY
-    |   +---OW
-    |   +---OY
-    |   +---UH
-    |   \---UW
-    +---train
-    |   +---AA
-    |   +---AE
-    |   +---AH
-    |   +---AO
-    |   +---AW
-    |   +---AY
-    |   +---EH
-    |   +---empty
-    |   +---ER
-    |   +---EY
-    |   +---IH
-    |   +---IY
-    |   +---OW
-    |   +---OY
-    |   +---UH
-    |   \---UW
-    \---valid
-        +---AA
-        +---AE
-        +---AH
-        +---AO
-        +---AW
-        +---AY
-        +---EH
-        +---empty
-        +---ER
-        +---EY
-        +---IH
-        +---IY
-        +---OW
-        +---OY
-        +---UH
-        \---UW
-'''
+```
++---test
+|   +---AA
+|   +---AE
+|   +---AH
+|   +---AO
+|   +---AW
+|   +---AY
+|   +---EH
+|   +---empty
+|   +---ER
+|   +---EY
+|   +---IH
+|   +---IY
+|   +---OW
+|   +---OY
+|   +---UH
+|   \---UW
++---train
+|   +---AA
+|   +---AE
+|   +---AH
+|   +---AO
+|   +---AW
+|   +---AY
+|   +---EH
+|   +---empty
+|   +---ER
+|   +---EY
+|   +---IH
+|   +---IY
+|   +---OW
+|   +---OY
+|   +---UH
+|   \---UW
+\---valid
+    +---AA
+    +---AE
+    +---AH
+    +---AO
+    +---AW
+    +---AY
+    +---EH
+    +---empty
+    +---ER
+    +---EY
+    +---IH
+    +---IY
+    +---OW
+    +---OY
+    +---UH
+    \---UW
+
+```
 
 And inside each Vowel Folders(in the format mentioned [here](https://github.com/Jenny-Smolenksy/LibriSpeechFilesParser.git):
-'''
+```
 +---AA
 |       10.wav
 |       10.wrd
@@ -113,7 +113,7 @@ And inside each Vowel Folders(in the format mentioned [here](https://github.com/
 |       102.wrd
 |       103.wav
 |       103.wrd
-'''
+```
 
 ## Params
 
