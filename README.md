@@ -131,14 +131,8 @@ and in the end - run the test speech net to test the model accuracy on the test 
 
 ## Output Documentation Exmaple
 
-![alt text](http://output-sample.jpg)
+![.](./output-sample.jpg)
 
-In the output printed on the validation and test set, you can see the following output printed:
-The first section:
-The model predict for each signal and each cell if there is an object there
-by taking all the cells that the model "correct object" (There is an object(vowel) there and also the model predicted there is vowel there)
-it split all the "correct object" to classes(vowels):
-For exmple, the printed line:
 Class AA : correct : 8.0/9.0 (89%)
 That's mean :
 
