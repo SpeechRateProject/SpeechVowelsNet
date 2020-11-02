@@ -129,8 +129,9 @@ then run the train speech net to train the model
 and in the end - run the test speech net to test the model accuracy on the test data set
 
 
-## Output Documentation
+## Output Documentation Exmaple
 
+![alt text](http://output-sample.jpg)
 
 In the output printed on the validation and test set, you can see the following output printed:
 The first section:
