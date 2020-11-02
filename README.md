@@ -133,18 +133,17 @@ and in the end - run the test speech net to test the model accuracy on the test 
 
 ![.](./output-sample.jpg)
 
-Class AA : correct : 8.0/9.0 (89%)
-That's mean :
+Class AA : correct : 8.0/9.0 (89%) means :
 
 8 -> how many cells classes are AA **and**
     the model predict that there is object there **and**
-	the model classify there is "AA" there
+	the model classify there is "AA" there.
 	
 9 -> how many cells classes are AA **and**
-	the model predict that there is object there
+	the model predict that there is object there.
 
 In the second section you can see how many mistakes was in the model prediction of "There is an object in the cell" (localization)
-and after that the classification 
+and after that the classification .
 
 
 ## Authors
