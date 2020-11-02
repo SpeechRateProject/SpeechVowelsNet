@@ -116,6 +116,11 @@ And inside each Vowel Folders(in the format mentioned [here](https://github.com/
 |       103.wrd
 ```
 
+## Trained Model
+
+We trained model using libri-speech 360 hours speech data.
+you can find the model in: https://github.com/almog1/SpeechMeasureServer/blob/main/trained/yolo_hybrid_model.pth
+
 ## Parameters
 
 In the main function inside run_speech_yolo_vowels:
