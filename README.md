@@ -1,27 +1,27 @@
-# Speech Yolo Model - Localize and Detect Vowels - Train and Test
+# Speech Yolo Vowels Neural Net
 
-This is part of speech rate measure project
+This is part of speech rate measure project.
 
-The model was built on the build model of SpeechYolo, by adding output in the last layer
-to predict number of vowels in a 500ms audio file
+This code can be used to train a neural network to detect and localize vowels on given audio file.
 
-You can see the argumnets  of Speech Yolo Model explained  [here](https://github.com/MLSpeech/speech_yolo)
-The model uses object detection methods
-Its goal is to localize boundaries of utterances(vowels) within the input signal(500ms of audio file), and classify them
-and count how many of them in the input signal,
-while its priority is to localize them more then classify them
+## Acknowledgement
 
-It composed by a convolution neural network, with loss function
+The project is based on the SpeechYolo project, that is used to detect and localize words in given audio file.
 
-As mentioned, we based on the SpeechYolo project
-to create our model we added another output to the last layer
-and convert the number of cells to be 32 such that we wont have
- more then one vowel in a cell so we can sum up al the values of 
-the cells inside each data file(input signal)
-and make the last layer to output also the number of vowels in the input signal,
-by sum up all the cells values(every cell value is 1/0)
-In addition, we added a loss "six part loss" for the loss function
-and save the model by check the mistake value (object/no object)
+You can see farther documentation  [here](https://github.com/MLSpeech/speech_yolo)
+
+## How it works?
+
+Its goal is to localize boundaries of utterances(vowels) within the input signal.
+we used audio files in duration of 500ms.
+
+From given audio files in .wav format, audio features extracted using librosa package.
+The audio features are the input layer of the neural net.
+
+The Neural net, similar to SpeechYoloProject composed by a convolution neural network, 
+based on VGG19 net.
+In this project, we modified the output layer of the model, the loss calculations, and different parameters 
+so that the detection and localization of obejct will suit vowel, instead of words. 
 
 
 ## Installation instructions
@@ -33,15 +33,16 @@ and save the model by check the mistake value (object/no object)
 * pathlib
 * Download the code:
 ```
-git clone 
+    git clone https://github.com/almog1/SpeechVowelsNet.git
 ```
 
-# Data
+## Data
 
 In the parameters to the main(see Params) you should specify three folders: Train,Valid,Test
-The files inside were created by the "Libri speech files parser" , you can see here(https://github.com/Jenny-Smolenksy/libri-speech-files-parser)
+The files inside were created by the "Libri speech files parser" , you can see farther documentation: 
+[here](https://github.com/Jenny-Smolenksy/libri-speech-files-parser)
 
-Exmple for the data is provided in the data folder, and looks as follow:
+Example for the data is provided in the data folder, and looks as follow:
 ```
 +---test
 |   +---AA
@@ -115,7 +116,7 @@ And inside each Vowel Folders(in the format mentioned [here](https://github.com/
 |       103.wrd
 ```
 
-## Params
+## Parameters
 
 In the main function inside run_speech_yolo_vowels:
 data_folder_train : with the training files (format as mentioned before, you can see example here)
@@ -128,7 +129,7 @@ then run the train speech net to train the model
 and in the end - run the test speech net to test the model accuracy on the test data set
 
 
-# Output
+## Output Documentation
 
 
 In the output printed on the validation and test set, you can see the following output printed:
